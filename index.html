@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Clube Eros - Acesso Liberado</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Pixel do Facebook (marcar compra uma vez) -->
+  <script>
+    if (!localStorage.getItem("purchaseMarked")) {
+      fbq('track', 'Purchase', {value: 39.99, currency: 'BRL'});
+      localStorage.setItem("purchaseMarked", "true");
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 100vh;
+      padding: 20px;
+    }
+
+    img {
+      width: 260px;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      font-size: 32px;
+      color: #ff007a;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #ddd;
+      margin-bottom: 30px;
+      max-width: 420px;
+    }
+
+    a.button {
+      background: #ff007a;
+      color: white;
+      padding: 16px 32px;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #ff007a;
+      transition: all 0.3s ease;
+    }
+
+    a.button:hover {
+      background: #ff3399;
+      box-shadow: 0 0 25px #ff3399;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Substitua pelo link real da logo -->
+  <img src="https://via.placeholder.com/300x300.png?text=Clube+Eros" alt="Logo Clube Eros" />
+
+  <h1>ACESSO LIBERADO</h1>
+  <p>Bem-vindo ao grupo mais exclusivo do Brasil.<br>Prepare-se para o proibido.</p>
+
+  <a href="https://t.me/+nC3j2QyH2RRkMGMx" target="_blank" class="button">✅ ENTRAR NO GRUPO</a>
+</body>
+</html>
